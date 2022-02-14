@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import edu.poniperro.stockx.item.Item;
 import edu.poniperro.stockx.item.Offer;
+import edu.poniperro.stockx.item.Sale;
 import edu.poniperro.stockx.item.Sneaker;
 
 public class SneakerTest {
@@ -26,6 +27,12 @@ public class SneakerTest {
     @Test
     public void getSaleTest() {
         assertEquals(0, sneaker.getSale());
+    }
+
+    @Test
+    public void offersTest() {
+        sneaker.add(new Sale("6", 200));
+        sneaker.add(new Sale("13", 500));
     }
 
     @Test
