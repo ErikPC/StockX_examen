@@ -22,8 +22,14 @@ public class Sale implements Offer {
 
     @Override
     public int compareTo(Offer offer) {
-        
-        return
+        if (this.price < offer.value()) {
+            return 1;
+        } else if (this.price == offer.value()) {
+            return 0;
+        } else {
+            return -1;
+        }
+
     }
 
     @Override
