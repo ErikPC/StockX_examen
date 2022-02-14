@@ -1,12 +1,9 @@
 package edu.poniperro;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import edu.poniperro.stockx.item.Item;
-import edu.poniperro.stockx.item.Offer;
 import edu.poniperro.stockx.item.Sale;
 import edu.poniperro.stockx.item.Sneaker;
 
