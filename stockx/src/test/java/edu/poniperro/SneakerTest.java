@@ -35,9 +35,4 @@ public class SneakerTest {
         sneaker.add(new Sale("13", 500));
     }
 
-    @Test
-    public void toStringTest() {
-        assertEquals("Jordan 1 Retro High Dark Mocha\n555088-105\n0", sneaker.toString());
-    }
-
 }
