@@ -34,7 +34,7 @@ public class Stockx {
          */
 
         Item sneaker = new Sneaker("555088-105", "Jordan 1 Retro High Dark Mocha");
-        System.out.println(App.draw(sneaker));
+        System.out.println(Stockx.draw(sneaker));
 
         /**
          * Crear bids
@@ -98,7 +98,7 @@ public class Stockx {
         Criteria maxBid = new MaxBid();
         List<Offer> maximum = maxBid.checkCriteria(sneaker);
         sneaker.setBid(maximum.isEmpty() ? 0 : maximum.get(0).value());
-        System.out.println(App.draw(sneaker));
+        System.out.println(Stockx.draw(sneaker));
 
         /**
          * Muestra la ask minima
@@ -116,7 +116,7 @@ public class Stockx {
         Criteria minAsk = new MinAsk();
         List<Offer> minimum = minAsk.checkCriteria(sneaker);
         sneaker.setAsk(minimum.isEmpty() ? 0 : minimum.get(0).value());
-        System.out.println(App.draw(sneaker));
+        System.out.println(Stockx.draw(sneaker));
 
         /**
          * Añade ventas (sales) de
@@ -154,7 +154,7 @@ public class Stockx {
 
         List<Offer> actualSale = lastSale.checkCriteria(sneaker);
         sneaker.setSale(actualSale.isEmpty() ? 0 : actualSale.get(0).value());
-        System.out.println(App.draw(sneaker));
+        System.out.println(Stockx.draw(sneaker));
 
         /**
          * Mostrar info de la zapatilla
@@ -222,7 +222,7 @@ public class Stockx {
          * - maxima bid
          */
 
-        System.out.println(App.draw(sneaker));
+        System.out.println(Stockx.draw(sneaker));
 
         // mostrar las listas ordenadas
 
