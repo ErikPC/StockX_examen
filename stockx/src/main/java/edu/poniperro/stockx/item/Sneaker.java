@@ -6,7 +6,7 @@ public class Sneaker implements Item {
 
     private String style;
     private String name;
-    private int sale;
+    private int sale = 0;
     private int ask;
     private int bid;
     private List<Offer> offer;
