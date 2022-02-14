@@ -28,7 +28,7 @@ public class Sale implements Offer {
 
     @Override
     public String toString() {
-        return this.size + "\\\\\\\\\\" + this.price;
+        return "La talla " + size() + " cuesta " + value();
     }
 
 }
