@@ -1,6 +1,6 @@
 package edu.poniperro.stockx.item;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Sneaker implements Item {
 
@@ -9,7 +9,7 @@ public class Sneaker implements Item {
     private int sale = 0;
     private int ask;
     private int bid;
-    private List<Offer> offer;
+    private ArrayList<Offer> offer = new ArrayList<Offer>();
 
     public Sneaker(String style, String name) {
         this.style = style;
@@ -58,7 +58,7 @@ public class Sneaker implements Item {
         this.offer.add(offer);
     }
 
-    public List<Offer> offers() {
+    public ArrayList<Offer> offers() {
         return this.offer;
     }
 
