@@ -19,7 +19,7 @@ public class SneakerTest {
     }
 
     @Test
-    void getNameTest() {
+    public void getNameTest() {
         assertEquals("Jordan 1 Retro High Dark Mocha", sneaker.getName());
     }
 
