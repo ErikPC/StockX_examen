@@ -22,7 +22,7 @@ public class Ask implements Offer {
 
     @Override
     public int compareTo(Offer offer) {
-        return 0;
+        return this.ask.compareTo(offer.value());
     }
 
     @Override
